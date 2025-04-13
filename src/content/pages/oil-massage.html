@@ -1,0 +1,71 @@
+---
+title: 'Hot Oil Relaxing Massage'
+description: "Indulge in our luxurious Hot Oil Relaxing Massage using premium warmed oils. Experience deep relaxation and skin nourishment with Dee's expert techniques."
+permalink: 'oil-massage/'
+eleventyNavigation:
+
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/service-page.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({width: 2560, height: 1136}) | avif %}">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-1399">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/oil.jpg" | resize({width: 874, height: 1072}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/oil.jpg" | resize({width: 874, height: 1072}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/oil.jpg" | resize({width: 874, height: 1072}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/oil.jpg" | resize({width: 874, height: 1072}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/oil.jpg" | resize({width: 874, height: 1072}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/oil.jpg" | resize({width: 874, height: 1072}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/oil.jpg" | resize({width: 1084, height: 1334}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/oil.jpg" | resize({width: 1084, height: 1334}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/oil.jpg" | resize({width: 1084, height: 1334}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/oil.jpg" | resize({width: 1084, height: 1334}) | jpeg %}" alt="thai massage" width="542" height="728" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </div>
+        </div>
+        <div class="cs-content">
+            <h1 class="cs-title">Experience <span class="cs-color">Hot Oil Relaxing Massage</span> in Wakefield</h1>
+            <p>Welcome to Dee Thai Therapy! Immerse yourself in the luxurious experience of our Hot Oil Relaxing Massage, where premium warmed oils combine with expert techniques to deliver profound relaxation and rejuvenation for both body and mind.</p>
+            <p>During your session, our skilled therapist Dee utilises specially warmed oils that penetrate deeply into muscle tissue, enhancing the therapeutic benefits. This soothing treatment employs gentle, flowing strokes that release tension, improve circulation, and nourish your skin, creating a multi-sensory experience of complete relaxation.</p>
+            <p>Our Hot Oil Relaxing Massage is perfect for those seeking relief from stress and muscle tension. The warmth of the oils helps to soften tight muscles while improving skin elasticity and hydration. Whether you're managing everyday stress, recovering from physical exertion, or simply treating yourself to well-deserved relaxation, this indulgent treatment offers immediate comfort and lasting benefits.</p>
+            <h3>Discover the Dee Thai Therapy Difference</h3>
+            <ul>
+                <li>
+                    <strong>Premium Oil Selection:</strong> Experience the benefits of our specialised blend of soya bean and coconut oils, selected for their superior skin-nourishing properties.
+                </li>
+                <li>
+                    <strong>Enhanced Absorption:</strong> The gentle heat of our warmed oils allows for deeper penetration into muscles and improved nutrient delivery to skin tissues.
+                </li>
+                <li>
+                    <strong>Stress Relief:</strong> Our carefully applied techniques release physical tension while promoting mental calm and emotional balance.
+                </li>
+                <li>
+                    <strong>Skin Rejuvenation:</strong> Natural oils deliver essential moisture and nutrients, leaving your skin soft, supple and radiant.
+                </li>
+                <li>
+                    <strong>Personalised Experience:</strong> Each session is tailored to your preferences and needs, ensuring optimal comfort and therapeutic benefit.
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
